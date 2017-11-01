@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="355px" height="531px" viewBox="0 0 355 531" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 83.8164062 26.859375 83.8164062 108.859375 0 82"></polygon>
+        <polygon id="path-2" points="0 83 83.8164062 109.859375 83.8164062 191.859375 0 165"></polygon>
+        <polygon id="path-3" points="0 166 83.8164062 192.859375 83.8164062 274.859375 0 248"></polygon>
+        <polygon id="path-4" points="85 0 168.816406 26.859375 168.816406 108.859375 85 82"></polygon>
+        <polygon id="path-5" points="85 83 168.816406 109.859375 168.816406 191.859375 85 165"></polygon>
+        <polygon id="path-6" points="85 166 168.816406 192.859375 168.816406 274.859375 85 248"></polygon>
+        <polygon id="path-7" points="174 46 257.816406 72.859375 257.816406 154.859375 174 128"></polygon>
+        <polygon id="path-8" points="174 129 257.816406 155.859375 257.816406 237.859375 174 211"></polygon>
+        <polygon id="path-9" points="259 46 342.816406 72.859375 342.816406 154.859375 259 128"></polygon>
+        <polygon id="path-10" points="259 129 342.816406 155.859375 342.816406 237.859375 259 211"></polygon>
+        <polygon id="path-11" points="90.6399114 383.76645 179.48415 381.266547 251.860974 425.657633 163.375234 430.604071"></polygon>
+        <polygon id="path-12" points="87 241 170.816406 267.859375 170.816406 349.859375 87 323"></polygon>
+        <polygon id="path-13" points="87 407 170.816406 433.859375 170.816406 515.859375 87 489"></polygon>
+        <polygon id="path-14" points="172 241 255.816406 267.859375 255.816406 349.859375 172 323"></polygon>
+        <polygon id="path-15" points="172 407 255.816406 433.859375 255.816406 515.859375 172 489"></polygon>
+        <polygon id="path-16" points="0 0 83.8164062 26.859375 83.8164062 108.859375 0 82"></polygon>
+        <polygon id="path-17" points="0 83 83.8164062 109.859375 83.8164062 191.859375 0 165"></polygon>
+        <polygon id="path-18" points="0 166 83.8164062 192.859375 83.8164062 274.859375 0 248"></polygon>
+        <polygon id="path-19" points="85 0 168.816406 26.859375 168.816406 108.859375 85 82"></polygon>
+        <polygon id="path-20" points="85 83 168.816406 109.859375 168.816406 191.859375 85 165"></polygon>
+        <polygon id="path-21" points="85 166 168.816406 192.859375 168.816406 274.859375 85 248"></polygon>
+        <polygon id="path-22" points="1.64892578 267.385376 86.8188477 241.976074 168.21875 266.12207 84.0283203 293.801758"></polygon>
+        <polygon id="path-23" points="89.6489258 239.385376 174.818848 213.976074 256.21875 238.12207 172.02832 265.801758"></polygon>
+        <polygon id="path-24" points="178.639911 22.7664501 267.48415 20.2665467 339.860974 64.657633 251.375234 69.6040714"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-32.000000, -96.000000)">
+            <g id="Group-2" transform="translate(38.000000, 80.000000)">
+                <g id="Group" transform="translate(174.000000, 213.000000)">
+                    <g id="Rectangle">
+                        <use fill="#FF6200" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <path stroke="#182E47" stroke-width="2" d="M-1,-1.37054596 L84.8164062,26.1297388 L84.8164062,110.229921 L-1,82.7296362 L-1,-1.37054596 Z"></path>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="#FF6200" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <path stroke="#182E47" stroke-width="2" d="M-1,81.629454 L84.8164062,109.129739 L84.8164062,193.229921 L-1,165.729636 L-1,81.629454 Z"></path>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="#FF6200" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <path stroke="#182E47" stroke-width="2" d="M-1,164.629454 L84.8164062,192.129739 L84.8164062,276.229921 L-1,248.729636 L-1,164.629454 Z"></path>
+                    </g>
+                    <g id="Rectangle" transform="translate(126.908203, 54.429687) scale(-1, 1) translate(-126.908203, -54.429687) ">
+                        <use fill="#FFA100" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        <path stroke="#182E47" stroke-width="2" d="M84,-1.37054596 L169.816406,26.1297388 L169.816406,110.229921 L84,82.7296362 L84,-1.37054596 Z"></path>
+                    </g>
+                    <g id="Rectangle" transform="translate(126.908203, 137.429687) scale(-1, 1) translate(-126.908203, -137.429687) ">
+                        <use fill="#FFA100" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        <path stroke="#182E47" stroke-width="2" d="M84,81.629454 L169.816406,109.129739 L169.816406,193.229921 L84,165.729636 L84,81.629454 Z"></path>
+                    </g>
+                    <g id="Rectangle" transform="translate(126.908203, 220.429687) scale(-1, 1) translate(-126.908203, -220.429687) ">
+                        <use fill="#FFA100" fill-rule="evenodd" xlink:href="#path-6"></use>
+                        <path stroke="#182E47" stroke-width="2" d="M84,164.629454 L169.816406,192.129739 L169.816406,276.229921 L84,248.729636 L84,164.629454 Z"></path>
+                    </g>
+                </g>
+                <g id="Rectangle">
+                    <use fill="#FF6200" fill-rule="evenodd" xlink:href="#path-7"></use>
+                    <path stroke="#182E47" stroke-width="2" d="M173,44.629454 L258.816406,72.1297388 L258.816406,156.229921 L173,128.729636 L173,44.629454 Z"></path>
+                </g>
+                <g id="Rectangle">
+                    <use fill="#FF6200" fill-rule="evenodd" xlink:href="#path-8"></use>
+                    <path stroke="#182E47" stroke-width="2" d="M173,127.629454 L258.816406,155.129739 L258.816406,239.229921 L173,211.729636 L173,127.629454 Z"></path>
+                </g>
+                <g id="Rectangle" transform="translate(300.908203, 100.429687) scale(-1, 1) translate(-300.908203, -100.429687) ">
+                    <use fill="#FFA100" fill-rule="evenodd" xlink:href="#path-9"></use>
+                    <path stroke="#182E47" stroke-width="2" d="M258,44.629454 L343.816406,72.1297388 L343.816406,156.229921 L258,128.729636 L258,44.629454 Z"></path>
+                </g>
+                <g id="Rectangle" transform="translate(300.908203, 183.429687) scale(-1, 1) translate(-300.908203, -183.429687) ">
+                    <use fill="#FFA100" fill-rule="evenodd" xlink:href="#path-10"></use>
+                    <path stroke="#182E47" stroke-width="2" d="M258,127.629454 L343.816406,155.129739 L343.816406,239.229921 L258,211.729636 L258,127.629454 Z"></path>
+                </g>
+                <g id="Rectangle" transform="translate(171.250443, 405.935309) rotate(-15.000000) translate(-171.250443, -405.935309) ">
+                    <use fill="#FF6200" fill-rule="evenodd" xlink:href="#path-11"></use>
+                    <path stroke="#182E47" stroke-width="2" d="M87.381698,382.857734 L179.753391,380.258575 L255.110462,426.477545 L163.106837,431.620636 L87.381698,382.857734 Z"></path>
+                </g>
+                <g id="Rectangle">
+                    <use fill="#FF6200" fill-rule="evenodd" xlink:href="#path-12"></use>
+                    <path stroke="#182E47" stroke-width="2" d="M86,239.629454 L171.816406,267.129739 L171.816406,351.229921 L86,323.729636 L86,239.629454 Z"></path>
+                </g>
+                <g id="Rectangle">
+                    <use fill="#FF6200" fill-rule="evenodd" xlink:href="#path-13"></use>
+                    <path stroke="#182E47" stroke-width="2" d="M86,405.629454 L171.816406,433.129739 L171.816406,517.229921 L86,489.729636 L86,405.629454 Z"></path>
+                </g>
+                <g id="Rectangle" transform="translate(213.908203, 295.429687) scale(-1, 1) translate(-213.908203, -295.429687) ">
+                    <use fill="#FFA100" fill-rule="evenodd" xlink:href="#path-14"></use>
+                    <path stroke="#182E47" stroke-width="2" d="M171,239.629454 L256.816406,267.129739 L256.816406,351.229921 L171,323.729636 L171,239.629454 Z"></path>
+                </g>
+                <g id="Rectangle" transform="translate(213.908203, 461.429687) scale(-1, 1) translate(-213.908203, -461.429687) ">
+                    <use fill="#FFA100" fill-rule="evenodd" xlink:href="#path-15"></use>
+                    <path stroke="#182E47" stroke-width="2" d="M171,405.629454 L256.816406,433.129739 L256.816406,517.229921 L171,489.729636 L171,405.629454 Z"></path>
+                </g>
+                <g id="Group" transform="translate(0.000000, 269.000000)">
+                    <g id="Rectangle">
+                        <use fill="#FF6200" fill-rule="evenodd" xlink:href="#path-16"></use>
+                        <path stroke="#182E47" stroke-width="2" d="M-1,-1.37054596 L84.8164062,26.1297388 L84.8164062,110.229921 L-1,82.7296362 L-1,-1.37054596 Z"></path>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="#FF6200" fill-rule="evenodd" xlink:href="#path-17"></use>
+                        <path stroke="#182E47" stroke-width="2" d="M-1,81.629454 L84.8164062,109.129739 L84.8164062,193.229921 L-1,165.729636 L-1,81.629454 Z"></path>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="#FF6200" fill-rule="evenodd" xlink:href="#path-18"></use>
+                        <path stroke="#182E47" stroke-width="2" d="M-1,164.629454 L84.8164062,192.129739 L84.8164062,276.229921 L-1,248.729636 L-1,164.629454 Z"></path>
+                    </g>
+                    <g id="Rectangle" transform="translate(126.908203, 54.429687) scale(-1, 1) translate(-126.908203, -54.429687) ">
+                        <use fill="#FFA100" fill-rule="evenodd" xlink:href="#path-19"></use>
+                        <path stroke="#182E47" stroke-width="2" d="M84,-1.37054596 L169.816406,26.1297388 L169.816406,110.229921 L84,82.7296362 L84,-1.37054596 Z"></path>
+                    </g>
+                    <g id="Rectangle" transform="translate(126.908203, 137.429687) scale(-1, 1) translate(-126.908203, -137.429687) ">
+                        <use fill="#FFA100" fill-rule="evenodd" xlink:href="#path-20"></use>
+                        <path stroke="#182E47" stroke-width="2" d="M84,81.629454 L169.816406,109.129739 L169.816406,193.229921 L84,165.729636 L84,81.629454 Z"></path>
+                    </g>
+                    <g id="Rectangle" transform="translate(126.908203, 220.429687) scale(-1, 1) translate(-126.908203, -220.429687) ">
+                        <use fill="#FFA100" fill-rule="evenodd" xlink:href="#path-21"></use>
+                        <path stroke="#182E47" stroke-width="2" d="M84,164.629454 L169.816406,192.129739 L169.816406,276.229921 L84,248.729636 L84,164.629454 Z"></path>
+                    </g>
+                </g>
+                <g id="Rectangle">
+                    <use fill="#FF6200" fill-rule="evenodd" xlink:href="#path-22"></use>
+                    <path stroke="#182E47" stroke-width="2" d="M-1.73345972,267.350912 L86.8180318,240.932764 L171.569723,266.073015 L84.0321758,294.85315 L-1.73345972,267.350912 Z"></path>
+                </g>
+                <g id="Rectangle">
+                    <use fill="#FF6200" fill-rule="evenodd" xlink:href="#path-23"></use>
+                    <path stroke="#182E47" stroke-width="2" d="M86.2665403,239.350912 L174.818032,212.932764 L259.569723,238.073015 L172.032176,266.85315 L86.2665403,239.350912 Z"></path>
+                </g>
+                <g id="Rectangle" transform="translate(259.250443, 44.935309) rotate(-15.000000) translate(-259.250443, -44.935309) ">
+                    <use fill="#FF6200" fill-rule="evenodd" xlink:href="#path-24"></use>
+                    <path stroke="#182E47" stroke-width="2" d="M175.381698,21.8577341 L267.753391,19.258575 L343.110462,65.4775447 L251.106837,70.6206362 L175.381698,21.8577341 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
