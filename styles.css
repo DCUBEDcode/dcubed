@@ -282,6 +282,7 @@ h2 span:nth-child(3) { animation-delay: 1950ms }
   flex-direction: column;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .card__border {
@@ -373,8 +374,9 @@ h2 span:nth-child(3) { animation-delay: 1950ms }
 }
 
 .card:hover {
-  transition: transform 225ms ease;
+  transition: all 225ms ease;
   transform: scale(1.05);
+  background: var(--yellow);
 }
 
 .loaded .content {
