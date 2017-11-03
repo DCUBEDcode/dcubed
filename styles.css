@@ -295,16 +295,16 @@ h2 span:nth-child(3) { animation-delay: 1950ms }
   z-index: 50;
   width: 100%;
   transition: none;
+  background: linear-gradient(90deg, var(--yellow), var(--orange));
 }
 
 .card:hover .card__border {
   opacity: 1;
-  transition: all 225ms ease;
+  transition: all 100ms ease;
 }
 
 .card__border--top {
   transform-origin: left;
-  background: linear-gradient(90deg, var(--orange), var(--yellow));
 }
 
 .card:hover .card__border--top,
@@ -324,18 +324,16 @@ h2 span:nth-child(3) { animation-delay: 1950ms }
   width: 1px;
   transform-origin: top;
   transform: scaleY(0);
-  background: linear-gradient(90deg, var(--yellow), var(--orange));
 }
 
-.card:hover .card__border--right { transition-delay: 75ms }
+.card:hover .card__border--right { transition-delay: 100ms }
 
 .card__border--bottom {
   transform-origin: right;
-  background: linear-gradient(90deg, var(--orange), var(--yellow));
   top: 100%;
 }
 
-.card:hover .card__border--bottom { transition-delay: 150ms }
+.card:hover .card__border--bottom { transition-delay: 200ms }
 
 .card__border--left {
   left: 0;
@@ -344,10 +342,9 @@ h2 span:nth-child(3) { animation-delay: 1950ms }
   width: 1px;
   transform-origin: bottom;
   transform: scaleY(0);
-  background: linear-gradient(90deg, var(--yellow), var(--orange));
 }
 
-.card:hover .card__border--left { transition-delay: 225ms }
+.card:hover .card__border--left { transition-delay: 300ms }
 
 .card__body {
   flex: 1;
