@@ -46,14 +46,7 @@ a {
 .btn {
   text-transform: uppercase;
   font-weight: 500;
-  padding: 10px;
-  margin-left: -10px;
   transition: all 225ms ease;
-  border-radius: 4px;
-}
-
-.btn:hover {
-  background: rgba(255,255,255,0.025);
 }
 
 .logo {
@@ -334,7 +327,7 @@ h2 span:nth-child(3) { animation-delay: 1950ms }
   background: linear-gradient(90deg, var(--yellow), var(--orange));
 }
 
-.card:hover .card__border--right { transition-delay: 225ms }
+.card:hover .card__border--right { transition-delay: 75ms }
 
 .card__border--bottom {
   transform-origin: right;
@@ -342,7 +335,7 @@ h2 span:nth-child(3) { animation-delay: 1950ms }
   top: 100%;
 }
 
-.card:hover .card__border--bottom { transition-delay: 450ms }
+.card:hover .card__border--bottom { transition-delay: 150ms }
 
 .card__border--left {
   left: 0;
@@ -354,7 +347,7 @@ h2 span:nth-child(3) { animation-delay: 1950ms }
   background: linear-gradient(90deg, var(--yellow), var(--orange));
 }
 
-.card:hover .card__border--left { transition-delay: 675ms }
+.card:hover .card__border--left { transition-delay: 225ms }
 
 .card__body {
   flex: 1;
