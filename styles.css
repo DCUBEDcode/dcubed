@@ -238,17 +238,12 @@ h2 span:nth-child(3) { animation-delay: 1950ms }
   top: 50%;
   left: 50%;
   width: 320px;
-  height: 300px;
   margin-left: -160px;
   margin-top: -150px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-
-.loaded .intro {
-  transform: translateX(calc(-50vw + 160px));
 }
 
 .content {
@@ -376,9 +371,16 @@ h2 span:nth-child(3) { animation-delay: 1950ms }
 .card:hover {
   transition: all 225ms ease;
   transform: scale(1.05);
-  background: var(--yellow);
 }
 
-.loaded .content {
-  display: flex;
+@media(min-width: 1024px) {
+
+  .loaded .intro {
+    transform: translateX(calc(-50vw + 160px));
+  }
+
+  .loaded .content {
+    display: flex;
+  }
+
 }
