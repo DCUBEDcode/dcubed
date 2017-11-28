@@ -10,23 +10,27 @@
 }
 
 html {
-  background: #061821;
+  background: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
   line-height: 1.5;
   font-weight: 400;
-  color: #bbb;
+  color: #555;
 }
 
 body {
   min-height: 100vh;
 }
 
+.flat {
+  margin-bottom: 0 !important;
+}
+
 h1,
 h2,
 h3,
 h4 {
-  color: #fff;
+  color: #333;
   font-weight: 300;
 }
 
@@ -35,7 +39,12 @@ h2,
 h3,
 h4,
 p {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 54px;
+  font-weight: 700;
 }
 
 a {
@@ -87,6 +96,11 @@ a {
   }
 }
 
+.container {
+  max-width: 740px;
+  margin: 0 auto;
+}
+
 hr {
   border: 0;
   background: none;
@@ -102,7 +116,7 @@ hr {
   font-size: 24px;
   letter-spacing: 7px;
   text-transform: uppercase;
-  color: #fff;
+  color: #111;
   font-weight: 300;
   text-align: center;
   font-family: 'Teko', sans-serif;
@@ -113,7 +127,7 @@ hr {
 
 .subtitle {
   font-size: 20px;
-  color: #484848;
+  color: #999;
   font-weight: 300;
   text-align: center;
   font-family: 'Teko', sans-serif;
@@ -247,13 +261,23 @@ h2 span:nth-child(3) { animation-delay: 1950ms }
 }
 
 .content {
-  padding-left: 320px;
+  background: #f9f9f9;
+  margin-left: 320px;
   display: none;
   opacity: 0;
   animation: fadeInUp 225ms 225ms ease forwards;
   min-height: 100vh;
+  flex-direction: column;
   align-items: center;
-  padding-right: 40px;
+  justify-content: center;
+  padding: 40px;
+  padding-top: 20vh;
+}
+
+.img {
+  background: #eee;
+  height: 400px;
+  flex: 1;
 }
 
 .cards {
@@ -263,6 +287,19 @@ h2 span:nth-child(3) { animation-delay: 1950ms }
   justify-content: center;
   flex-wrap: wrap;
   margin-left: -20px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__desc {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 40px;
 }
 
 .card {
@@ -373,13 +410,45 @@ h2 span:nth-child(3) { animation-delay: 1950ms }
   transform: scale(1.05);
 }
 
+.actions {
+  margin-bottom: 60px;
+}
+
+.action {
+  color: inherit;
+}
+
+.action h2:before {
+  content: "/";
+  font-weight: 600;
+  color: #ff6102;
+  margin-right: 10px;
+}
+
 @media(min-width: 1024px) {
+
+
+  .actions {
+    margin-left: -40px;
+  }
+
+  .action {
+    padding-left: 40px;
+  }
+
+  .action p {
+    margin-bottom: 0;
+  }
 
   .loaded .intro {
     transform: translateX(calc(-50vw + 160px));
   }
 
   .loaded .content {
+    display: flex;
+  }
+
+  .actions {
     display: flex;
   }
 
