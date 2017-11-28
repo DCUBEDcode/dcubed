@@ -9,8 +9,14 @@
   --yellow: #FFA101;
 }
 
+html,
+body {
+  height: 100%;
+  overflow-y: auto;
+}
+
 html {
-  background: #fff;
+  background: #fffef8;
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
   line-height: 1.5;
@@ -20,6 +26,7 @@ html {
 
 body {
   min-height: 100vh;
+  padding-top: 100px;
 }
 
 .flat {
@@ -97,19 +104,8 @@ a {
 }
 
 .container {
-  max-width: 740px;
+  max-width: 800px;
   margin: 0 auto;
-}
-
-hr {
-  border: 0;
-  background: none;
-  border-bottom: 1px solid #f44336;
-  width: 100px;
-  margin-bottom: 10px;
-  opacity: 0;
-  transform-origin: center;
-  animation: grow 200ms 1000ms ease forwards;
 }
 
 .title {
@@ -122,7 +118,9 @@ hr {
   font-family: 'Teko', sans-serif;
   opacity: 0;
   animation: fadeIn 200ms 1000ms ease forwards;
-  margin-bottom: 5px;
+  border-bottom: 1px solid #ff6102;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .subtitle {
@@ -248,30 +246,31 @@ h2 span:nth-child(3) { animation-delay: 1950ms }
 
 .intro {
   transition: all 375ms ease;
-  position: fixed;
-  top: 50%;
-  left: 50%;
+  margin: 0 auto;
   width: 320px;
-  margin-left: -160px;
-  margin-top: -150px;
+  height: 400px;
+  transform: translateZ(0);
+  z-index: 50;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: calc(50vh - 300px);
 }
 
 .content {
-  background: #f9f9f9;
-  margin-left: 320px;
   display: none;
   opacity: 0;
   animation: fadeInUp 225ms 225ms ease forwards;
-  min-height: 100vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px;
-  padding-top: 20vh;
+  margin-top: -300px;
+}
+
+.hero__title,
+.hero__desc {
+  text-align: center;
 }
 
 .img {
@@ -299,7 +298,9 @@ h2 span:nth-child(3) { animation-delay: 1950ms }
 .hero__desc {
   font-size: 20px;
   font-weight: 300;
+  padding-bottom: 40px;
   margin-bottom: 40px;
+  border-bottom: 1px solid #ff6102;
 }
 
 .card {
@@ -434,6 +435,7 @@ h2 span:nth-child(3) { animation-delay: 1950ms }
 
   .action {
     padding-left: 40px;
+    flex: 1;
   }
 
   .action p {
@@ -441,7 +443,7 @@ h2 span:nth-child(3) { animation-delay: 1950ms }
   }
 
   .loaded .intro {
-    transform: translateX(calc(-50vw + 160px));
+    transform: translateY(calc(-50vh + 299px)) translateZ(0);
   }
 
   .loaded .content {
