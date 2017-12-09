@@ -163,7 +163,7 @@ body {
   left: 0;
   bottom: 0;
   opacity: 0;
-  animation: showLeft 375ms 300ms ease forwards;
+  animation: showLeft 900ms 300ms ease forwards;
 }
 
 .logo__top {
@@ -176,7 +176,7 @@ body {
   left: 38px;
   top: 143px;
   opacity: 0;
-  animation: showMiddle 375ms 600ms ease forwards;
+  animation: showTop 900ms 300ms ease forwards;
 }
 
 .logo__bottom {
@@ -189,7 +189,7 @@ body {
   left: 38px;
   bottom: 16px;
   opacity: 0;
-  animation: showMiddle 375ms 900ms ease forwards;
+  animation: showBottom 900ms 300ms ease forwards;
 }
 
 .logo__right {
@@ -202,7 +202,7 @@ body {
   z-index: 10;
   opacity: 0;
   bottom: 31px;
-  animation: showRight 375ms 1200ms ease forwards;
+  animation: showRight 900ms 300ms ease forwards;
 }
 
 .headings {
@@ -221,7 +221,7 @@ body {
   border-bottom: 1px solid rgba(255,255,255,0.25);
   margin-bottom: 15px;
   opacity: 0;
-  animation: showHeading 375ms 1500ms ease forwards;
+  animation: showHeading 375ms 600ms ease forwards;
 }
 
 .subheading {
@@ -245,13 +245,13 @@ body {
   margin: 0 4px;
 }
 
-.subheading .first { animation-delay: 1800ms }
-.subheading .second { animation-delay: 2100ms }
-.subheading .third { animation-delay: 2400ms }
+.subheading .first { animation-delay: 900ms }
+.subheading .second { animation-delay: 1200ms }
+.subheading .third { animation-delay: 1500ms }
 
 @keyframes showLeft {
   0% {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(60px);
   }
   100% {
@@ -260,10 +260,21 @@ body {
   }
 }
 
-@keyframes showMiddle {
+@keyframes showTop {
   0% {
-    opacity: 0;
+    opacity: 1;
     transform: translate3d(-60px, -60px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes showBottom {
+  0% {
+    opacity: 1;
+    transform: translate3d(60px, 60px, 0);
   }
   100% {
     opacity: 1;
@@ -273,7 +284,7 @@ body {
 
 @keyframes showRight {
   0% {
-    opacity: 0;
+    opacity: 1;
     transform: translate3d(60px, -60px, 0);
   }
   100% {
