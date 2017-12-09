@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
 
   tabBtns.forEach(function(tab) {
     tab.addEventListener("click", function(e) {
-      var id = e.target.dataset.tabId;
+      var id = e.currentTarget.dataset.tabId;
       e.preventDefault();
       tabs.setAttribute("class", "tabs");
       tabs.classList.add(tabsActiveClass + id);
