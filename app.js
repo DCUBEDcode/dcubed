@@ -18,6 +18,12 @@ document.addEventListener("DOMContentLoaded", function(e) {
       htmlPreview.append(markup);
       PR.prettyPrint();
       codeLoaded = true;
+      fetch("styles/dcubed.css").then(function(res) {
+        console.log(res);
+        return res.blob();
+      }).then(function(data) {
+        console.log(data);
+      })
     }
   });
 

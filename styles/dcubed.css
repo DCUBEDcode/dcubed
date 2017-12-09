@@ -48,6 +48,7 @@ body {
   line-height: 1.7;
   font-size: 100%;
   color: #fff;
+  overflow: hidden;
 }
 
 a {
@@ -181,7 +182,8 @@ body {
   align-items: center;
   justify-content: center;
   opacity: 0;
-  animation: fadeIn 375ms 1500ms ease forwards;
+  background: rgba(0,0,0,0.15);
+  animation: slideUp 375ms 1500ms ease forwards;
 }
 
 .header__nav {
@@ -538,6 +540,28 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
   }
 }
 
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media(min-width: 1024px) {
   
   body {
@@ -545,9 +569,10 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
   }
 
   .header {
-    bottom: auto;
-    top: 0;
     justify-content: flex-end;
+    top: 0;
+    bottom: auto;
+    animation-name: slideIn;
   }
 
   button {
