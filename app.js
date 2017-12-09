@@ -8,23 +8,14 @@ document.addEventListener("DOMContentLoaded", function(e) {
     shelfOpenClass = "shelf-open",
     htmlPreview = document.getElementById("html-preview"),
     cssPreview = document.getElementById("css-preview"),
+    jsPreview = document.getElementById("js-preview"),
     tabs = document.getElementById("tabs"),
-    tabBtns = document.querySelectorAll(".tabs__tab");
+    tabBtns = document.querySelectorAll(".tabs__tab"),
+    markup = document.documentElement.innerHTML;
 
   showCode.addEventListener("click", function(e) {
-    var markup = document.documentElement.innerHTML;
     body.classList.add(shelfOpenClass);
-    if(!codeLoaded) {
-      htmlPreview.append(markup);
-      PR.prettyPrint();
-      codeLoaded = true;
-      fetch("styles/dcubed.css").then(function(res) {
-        console.log(res);
-        return res.blob();
-      }).then(function(data) {
-        console.log(data);
-      })
-    }
+    PR.prettyPrint();
   });
 
   hideCode.addEventListener("click", function(e) {
@@ -42,5 +33,22 @@ document.addEventListener("DOMContentLoaded", function(e) {
       tabs.classList.add(tabsActiveClass + id);
     })
   });
+
+  // Load HTML into tabs
+  htmlPreview.append(markup);
+
+  // Load CSS into tabs
+  fetch("styles/dcubed.css").then(function(res) {
+    return res.text();
+  }).then(function(data) {
+    cssPreview.append(data);
+  })
+
+  // Load JS into tabs
+  fetch("./app.js").then(function(res) {
+    return res.text();
+  }).then(function(data) {
+    jsPreview.append(data);
+  })
 
 });

@@ -22,6 +22,7 @@
 .close-x {
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }
 
 .close-x path {
@@ -182,7 +183,6 @@ body {
   align-items: center;
   justify-content: center;
   opacity: 0;
-  background: rgba(0,0,0,0.15);
   animation: slideUp 375ms 1500ms ease forwards;
 }
 
@@ -209,7 +209,7 @@ body {
 
 .logo {
   width: 180px;
-  height: 304px;
+  height: 252px;
   position: relative;
   margin-bottom: 30px;
   margin-left: 30px;
@@ -236,7 +236,7 @@ body {
   background-size: cover;
   z-index: 25;
   left: 38px;
-  top: 143px;
+  top: 91px;
   opacity: 0;
   animation: showTop 900ms 300ms ease forwards;
 }
@@ -562,10 +562,26 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
   }
 }
 
+@media(max-width: 1024px) {
+  .header {
+    border-top: 1px solid var(--yellow);
+  }
+}
+
 @media(min-width: 1024px) {
   
   body {
     padding-bottom: 0;
+  }
+
+  .close-x {
+    transition: all 200ms ease;
+    opacity: 0.8;
+  }
+
+  .close-x:hover {
+    opacity: 1;
+    transform: scale(1.25);
   }
 
   .header {
@@ -573,6 +589,7 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
     top: 0;
     bottom: auto;
     animation-name: slideIn;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
   }
 
   button {
