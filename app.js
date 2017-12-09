@@ -1,4 +1,5 @@
 var tabsActiveClass = "tabs--active-";
+var codeLoaded = false;
 
 document.addEventListener("DOMContentLoaded", function(e) {
   var showCode = document.getElementById("show-code"),
@@ -13,8 +14,11 @@ document.addEventListener("DOMContentLoaded", function(e) {
   showCode.addEventListener("click", function(e) {
     var markup = document.documentElement.innerHTML;
     body.classList.add(shelfOpenClass);
-    htmlPreview.append(markup);
-    PR.prettyPrint();
+    if(!codeLoaded) {
+      htmlPreview.append(markup);
+      PR.prettyPrint();
+      codeLoaded = true;
+    }
   });
 
   hideCode.addEventListener("click", function(e) {
