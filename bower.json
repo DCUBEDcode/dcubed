@@ -1,0 +1,20 @@
+{
+  "name": "dcubed",
+  "homepage": "https://github.com/jsncbt/dcubed",
+  "authors": [
+    "(Jason Corbett <jason@dcubed.com.au>)"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "code-prettify": "*"
+  }
+}
