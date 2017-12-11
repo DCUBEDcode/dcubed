@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="143px" viewBox="0 0 100 143" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>tile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.500056612">
+        <g id="tile">
+            <polygon id="Path-2" fill="#FFFFFF" points="0 92.5509693 49.8067764 71.3903743 49.8067764 121.71347 0 142.527991"></polygon>
+            <polygon id="Path-2" fill="#000000" points="0 42.1498997 49.8067764 20.9893048 49.8067764 71.3124002 0 92.1269218"></polygon>
+            <polygon id="Path-2" fill="#FFFFFF" points="50.1336898 21.1605949 99.9404662 0 99.9404662 50.3230954 50.1336898 71.137617"></polygon>
+            <polygon id="Path-2" fill="#000000" points="50.1336898 71.5616644 99.9404662 50.4010695 99.9404662 100.724165 50.1336898 121.538686"></polygon>
+        </g>
+    </g>
+</svg>

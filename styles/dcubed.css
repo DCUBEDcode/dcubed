@@ -52,6 +52,20 @@ body {
   overflow: hidden;
 }
 
+body:before {
+  content: "";
+  display: block;
+  background: url(../img/tile.svg);
+  background-size: 64px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.01;
+  animation: grow 15s ease forwards;
+}
+
 a {
   text-decoration: none;
   color: var(--orange);
@@ -459,6 +473,15 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
   pre .tag, code .tag { color: #006; font-weight: bold; }
   pre .atn, code .atn { color: #404; }
   pre .atv, code .atv { color: #060; }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
 }
 
 @keyframes showLeft {
