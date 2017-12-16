@@ -140,12 +140,37 @@ button {
   border-radius: 1.25rem;
   border: 1px solid transparent;
   transition: all 200ms ease;
+  text-decoration: none;
+}
+
+.button--twitch {
+  background-color: #4B367C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 0.9375rem 2.5rem;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.button--twitch i {
+  font-size: 36px;
+  margin-right: 0.9375rem;
+  line-height: 1;
+  position: relative;
+  top: 2px;
+  width: 36px;
+  height: 36px;
 }
 
 .button:hover {
   background: none;
   border-color: var(--orange);
   color: var(--orange);
+  text-decoration: none;
 }
 
 blockquote {
@@ -170,7 +195,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 70px;
 }
 
 .header {
@@ -183,7 +207,9 @@ body {
   align-items: center;
   justify-content: center;
   opacity: 0;
+  background: rgba(0,0,0,0.1);
   animation: slideUp 375ms 1500ms ease forwards;
+  display: none;
 }
 
 .header__nav {
@@ -270,6 +296,9 @@ body {
 .headings {
   text-align: center;
   line-height: 1;
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: showHeading 375ms 600ms ease forwards;
 }
 
 .title {
@@ -286,30 +315,21 @@ body {
   letter-spacing: 10px;
   border-bottom: 1px solid rgba(255,255,255,0.25);
   margin-bottom: 15px;
-  opacity: 0;
-  animation: showHeading 375ms 600ms ease forwards;
 }
 
 .subheading {
   color: #fff;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .subheading i {
   font-size: 10px;
 }
 
-.subheading .first,
-.subheading .second,
-.subheading .third {
+.content {
   opacity: 0;
-  animation: showSubHeading 375ms ease forwards;
-  margin: 0 4px;
+  animation: fadeIn 375ms 1500ms ease forwards
 }
-
-.subheading .first { animation-delay: 900ms }
-.subheading .second { animation-delay: 1200ms }
-.subheading .third { animation-delay: 1500ms }
 
 .shelf {
   display: block;
@@ -522,11 +542,11 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
     transform: scale(0);
   }
   50% {
-    opacity: 0.5;
+    opacity: 1;
     transform: scale(1.5);
   }
   100% {
-    opacity: 0.5;
+    opacity: 1;
     transform: scale(1);
   }
 }
@@ -563,17 +583,15 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
 }
 
 @media(max-width: 1024px) {
+
   .header {
     border-top: 1px solid var(--yellow);
   }
+
 }
 
 @media(min-width: 1024px) {
   
-  body {
-    padding-bottom: 0;
-  }
-
   .close-x {
     transition: all 200ms ease;
     opacity: 0.8;
