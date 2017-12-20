@@ -114,7 +114,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 80px;
 }
 
 .hero__logo {
@@ -123,6 +123,7 @@ h3 {
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .hero__logo img {
@@ -137,9 +138,7 @@ h3 {
   font-weight: 300;
   font-size: 20px;
   letter-spacing: 4px;
-  padding-top: 10px;
-  margin-top: 5px;
-  border-top: 1px solid rgba(255,255,255,0.2);
+  opacity: 0.5;
 }
 
 .hero__nav {
@@ -147,9 +146,9 @@ h3 {
 }
 
 .hero__footer {
-  padding-top: 60px;
   position: relative;
   background-image: linear-gradient(0deg, rgba(255,0,212,0.25) 0%, rgba(0,0,0,0.00) 92%);
+  height: 300px;
 }
 
 .hero__content {
@@ -160,13 +159,16 @@ h3 {
   text-align: center;
 }
 
-.hero__title {
+.main__title {
+  color: #fff;
   font-size: 42px;
   font-family: "Teko";
   font-weight: 300;
   text-align: center;
-  margin-bottom: 0;
   text-shadow: 0 1px 1px rgba(0,0,0,0.25);
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 /* Breakout */
@@ -199,20 +201,20 @@ h3 {
   background: var(--offWhite);
   padding-bottom: 75%;
   position: relative;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .card__hero--transparent {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.05);
 }
 
 .card__footer {
-  padding: 10px;
-  padding-top: 15px;
+  padding-bottom: 10px;
 }
 
 .card__title {
   font-size: 20px;
+  color: #fff;
 }
 
 /* UI Design Thumb */
@@ -429,6 +431,59 @@ h3 {
   text-shadow: 0 1px 1px rgba(0,0,0,0.25);
 }
 
+.whiteboard {
+  background-color: #fff;
+  background-size: 80%;
+  background-image: url(../img/writing.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.whiteboard__pens {
+  width: 25px;
+  height: 35px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.25);
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+
+.whiteboard__pens-label {
+  padding: 2px;
+  font-size: 8px;
+  background: #eee;
+  color: var(--color);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.whiteboard__pen {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 5px;
+  height: 13px;
+  background: blue;
+}
+
+.whiteboard__pen--blue { 
+  left: 0;
+  background: blue;
+}
+
+.whiteboard__pen--green {
+  left: 6px;
+  background: green;
+}
+
+.whiteboard__pen--red {
+  left: 12px;
+  background: red;
+}
+
 .posts {
   padding: 20px 0;
 }
@@ -509,10 +564,6 @@ h3 {
   animation: showLogo 500ms 100ms ease forwards;
 }
 
-.hero__title {
-  opacity: 0;
-  animation: showTitle 375ms 1000ms ease forwards;
-}
 
 .breakout__item {
   opacity: 0;
@@ -522,6 +573,15 @@ h3 {
 .hero__footer {
   opacity: 0;
   animation: showHeroFooter 375ms 600ms ease forwards;
+}
+
+.main__lead {
+  margin-top: -240px;
+}
+
+.main__title {
+  opacity: 0;
+  animation: showTitle 375ms 1000ms ease forwards;
 }
 
 .breakout__item:nth-child(1) { animation-delay: 875ms }
@@ -535,8 +595,23 @@ h3 {
     font-size: 18px;
   }
 
-  .hero__header {
-    padding-top: 80px;
+  .breakout__item:nth-child(5) {
+    display: none;
+  }
+
+  .hero__footer {
+    height: 440px;
+  }
+
+  .main__lead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -400px;
+  }
+
+  .breakout {
+    width: 100%;
   }
 
   .hero__logo img {
@@ -547,12 +622,9 @@ h3 {
     font-size: 30px;
   }
 
-  .hero__title {
+  .main__title {
     font-size: 72px;
-  }
-
-  .hero__footer {
-    padding-top: 180px;
+    margin-bottom: 30px;
   }
 
   .card {
