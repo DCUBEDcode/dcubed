@@ -420,6 +420,7 @@ h3 {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  background: #fff;
 }
 
 .cta__title {
