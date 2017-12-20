@@ -601,6 +601,10 @@ h3 {
     display: none;
   }
 
+  .hero {
+    height: 800px;
+  }
+
   .hero__footer {
     height: 440px;
   }
