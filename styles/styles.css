@@ -133,7 +133,6 @@ h3 {
 
 .hero__logo {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
@@ -627,7 +626,7 @@ h3 {
 
 .hero__gradient {
   opacity: 0;
-  animation: showHeroFooter 375ms 900ms ease forwards;
+  animation: showHeroFooter 375ms 1000ms ease forwards;
 }
 
 .breakout__item:nth-child(1) { animation-delay: 1175ms }
