@@ -134,8 +134,8 @@
           </div>
         </div>
       </header>
-      <div class="main">
-        <div class="container main__lead">
+      <div class="main section-padding">
+        <div class="container container--small main__lead">
           <section class="recent">
             <h1 class="text-centered title">Recent work</h1>
             <div class="recent__wrap">
@@ -152,27 +152,74 @@
         </div>
       </div>
       <section class="posts">
-        <h1 class="text-centered title">Our thoughts</h1>
-        <div class="container posts__wrap">
-          <div class="post">
-            <div class="post__img"></div>
-            <h2 class="post__title flat">When to do this and that</h2>
-            <p>Consectetur porro nam cumque modi labore iure sed velit? Asperiores unde libero iusto mollitia sunt necessitatibus?</p>
-          </div>
-          <div class="post">
-            <div class="post__img"></div>
-            <h2 class="post__title flat">When to do this and that</h2>
-            <p>Consectetur porro nam cumque modi labore iure sed velit? Asperiores unde libero iusto mollitia sunt necessitatibus?</p>
+        <div class="section-padding">
+          <h1 class="text-centered title">Our thoughts</h1>
+          <div class="container container--small posts__wrap">
+            <div class="post">
+              <div class="post__img" style="background-image: url(https://static1.squarespace.com/static/582676fcbe6594017e869966/599f8c86cd0f68882d4b0143/599f8c86cd39c3c2bc5d0eeb/1503628486389/brockhampton+1.jpg)"></div>
+              <h2 class="post__title flat">The similarities between Hip Hop and Engineering</h2>
+              <p>Consectetur porro nam cumque modi labore iure sed velit? Asperiores unde libero iusto mollitia sunt necessitatibus?</p>
+            </div>
+            <div class="post">
+              <div class="post__img" style="background-image: url(https://i.pinimg.com/originals/db/69/6a/db696a3f9380b1c5fc34bafa33fc962d.jpg)"></div>
+              <h2 class="post__title flat">Creating your own CSS flavour</h2>
+              <p>Consectetur porro nam cumque modi labore iure sed velit? Asperiores unde libero iusto mollitia sunt necessitatibus?</p>
+            </div>
           </div>
         </div>
         <div class="twitch-band">
-          <i class="fa fa-twitch"></i>
-          <div class="twitch-band__content">
-            <h3>Watch Jason live on Twitch</h3>
-            <p>Every Tue, Thu 7PM PST</p>
+          <div class="container twitch-band__container">
+            <i class="fa fa-twitch twitch-band__icon"></i>
+            <div class="twitch-band__content">
+              <h2 class="flat">Your designs, our code</h2>
+              <p class="flat">Every Tue, Thu 7PM PST</p>
+            </div>
+            <a href="#" class="btn btn--outline twitch-band__action">Watch on Twitch</a>
+          </div>
+        </div>
+        <div class="section-padding">
+          <div class="container container--small posts__wrap">
+            <div class="post">
+              <div class="post__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Fre_tPGDZdI_oh-osVmsVfs6-V_sd1a6S2qyCedcNSpYjRx_)"></div>
+              <h2 class="post__title flat">Thinking mobile only</h2>
+              <p>Consectetur porro nam cumque modi labore iure sed velit? Asperiores unde libero iusto mollitia sunt necessitatibus?</p>
+            </div>
+            <div class="post">
+              <div class="post__img" style="background-image: url(https://images.complex.com/complex/images/c_limit,w_680/fl_lossy,pg_1,q_auto/fimtzdindnp4q3pxian1/best-music-videos-2017)"></div>
+              <h2 class="post__title flat">The best design videos of 2017</h2>
+              <p>Consectetur porro nam cumque modi labore iure sed velit? Asperiores unde libero iusto mollitia sunt necessitatibus?</p>
+            </div>
           </div>
         </div>
       </section>
+      <footer class="footer section-padding">
+        <div class="container container--small">
+          <h1 class="text-centered title">Work with us</h1>
+          <form action="" class="form">
+            <div class="form__group">
+              <input id="name" type="text" class="input" autocomplete="off">
+              <label for="name">Name</label>
+            </div>
+            <div class="form__group">
+              <input id="email" type="email" class="input">
+              <label for="email">Email</label>
+            </div>
+            <div class="form__group">
+              <input id="company" type="text" class="input">
+              <label for="company">Company</label>
+            </div>
+            <div class="form__group">
+              <input id="phone" type="text" class="input">
+              <label for="phone">Phone (optional)</label>
+            </div>
+            <div class="form__group">
+              <textarea id="message" class="input input--textarea"></textarea>
+              <label for="message">What's up?</label>
+            </div>
+            <input type="submit" class="btn btn--block">
+          </form>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
