@@ -9,6 +9,7 @@
   --orange: #FE6000;
   --yellow: #FFA000;
   --offWhite: #eee;
+  --purple: #4B367C;
 
   --heroBg: var(--darkBlue);
 
@@ -20,7 +21,7 @@ img {
 }
 
 html {
-  background: var(--offWhite);
+  background: #fff;
 }
 
 html,
@@ -52,7 +53,7 @@ h3 {
 
 .container {
   padding: 0 20px;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
 }
@@ -63,6 +64,17 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.title {
+  font-size: 42px;
+  font-family: "Teko";
+  font-weight: 300;
+  text-align: center;
 }
 
 .btn {
@@ -108,7 +120,7 @@ h3 {
   justify-content: space-between;
   color: #fff;
   position: relative;
-  height: 90vh;
+  height: 80vh;
   max-height: 800px;
 }
 
@@ -152,7 +164,7 @@ h3 {
 }
 
 .hero__gradient {
-  background-image: linear-gradient(0deg, rgba(255,0,212,0.25) 0%, rgba(0,0,0,0.00) 92%);
+  background-image: linear-gradient(0deg, var(--purple) 0%, rgba(0,0,0,0.00) 92%);
 }
 
 .hero__content {
@@ -165,10 +177,10 @@ h3 {
 
 .hero__container {
   position: relative;
-  bottom: -60px;
+  bottom: -80px;
 }
 
-.main__title {
+.hero__title {
   color: #fff;
   font-size: 42px;
   font-family: "Teko";
@@ -189,7 +201,7 @@ h3 {
   margin-right: -20px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -537,6 +549,29 @@ h3 {
   }
 }
 
+@keyframes showMain {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes showLogo {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 @keyframes showTitle {
   0% {
     opacity: 0;
@@ -570,11 +605,20 @@ h3 {
   }
 }
 
-.hero__logo {
+.hero {
   opacity: 0;
-  animation: showLogo 500ms 100ms ease forwards;
+  animation: showLogo 375ms 500ms ease forwards;
 }
 
+.hero__title {
+  opacity: 0;
+  animation: showTitle 200ms 800ms ease forwards;
+}
+
+.main {
+  opacity: 0;
+  animation: showMain 375ms 1500ms ease forwards;
+}
 
 .breakout__item {
   opacity: 0;
@@ -583,22 +627,56 @@ h3 {
 
 .hero__gradient {
   opacity: 0;
-  animation: showHeroFooter 375ms 600ms ease forwards;
+  animation: showHeroFooter 375ms 900ms ease forwards;
 }
 
-.main__lead {
-  margin-top: -280px;
+.breakout__item:nth-child(1) { animation-delay: 1175ms }
+.breakout__item:nth-child(2) { animation-delay: 1275ms }
+.breakout__item:nth-child(3) { animation-delay: 1375ms }
+.breakout__item:nth-child(4) { animation-delay: 1475ms }
+
+.main {
+  padding-top: 80px;
 }
 
-.main__title {
-  opacity: 0;
-  animation: showTitle 375ms 1000ms ease forwards;
+.recent {
+  margin-bottom: 40px;
 }
 
-.breakout__item:nth-child(1) { animation-delay: 875ms }
-.breakout__item:nth-child(2) { animation-delay: 975ms }
-.breakout__item:nth-child(3) { animation-delay: 1075ms }
-.breakout__item:nth-child(4) { animation-delay: 1175ms }
+.recent__wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1px;
+}
+
+.recent__item {
+  position: relative;
+  padding-top: 150%;
+}
+
+.recent__desktop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 150%;
+  background: #666;
+}
+
+.post__img {
+  padding-top: 50%;
+  background: #666;
+  margin-bottom: 20px;
+}
+
+.post__title {
+  font-family: "Teko";
+  font-size: 28px;
+}
+
+.twitch-band {
+  background: var(--purple);
+}
 
 @media(min-width: 960px) {
 
@@ -609,7 +687,6 @@ h3 {
   .breakout__item:nth-child(5) {
     display: none;
   }
-
 
   .hero__footer {
     height: 440px;
@@ -633,7 +710,7 @@ h3 {
     font-size: 30px;
   }
 
-  .main__title {
+  .hero__title {
     font-size: 72px;
     margin-bottom: 30px;
   }
@@ -661,7 +738,7 @@ h3 {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding-top: 40px;
+    padding-top: 180px;
   }
 
   .breakout__items {
@@ -687,15 +764,20 @@ h3 {
     padding-left: 0;
   }
 
+  .recent__item,
+  .recent__desktop {
+    padding-top: 72.5%;
+  }
+
   .posts {
     flex: 1;
   }
 
-  .posts__container {
+  .posts__wrap {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 40px;
   }
 
   .post:nth-child(1) { grid-column: span 2 }
