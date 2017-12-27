@@ -288,7 +288,7 @@ label {
   width: 100%;
   padding: 20px;
   opacity: 0;
-  transition: all 300ms 100ms ease;
+  transition: all 300ms ease;
 }
 
 .card__action:after {
@@ -409,6 +409,18 @@ label {
 
 .prototyping {
   background-image: radial-gradient(50% 100%, #FFA101 0%, #FF6102 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prototyping__wrap {
+  width: 90%;
+  height: 90%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .prototyping__device {
@@ -418,25 +430,32 @@ label {
   box-shadow: 0 5px 10px rgba(0,0,0,0.25);
   position: absolute;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .prototyping__device--phone {
   width: 32%;
-  height: 80%;
   z-index: 20;
-  top: 10%;
+  top: 13%;
   left: 7%;
-  flex-direction: column;
+}
+
+.prototyping__device--phone:after {
+  display: block;
+  content: "";
+  padding-top: 206.06060606%;
 }
 
 .prototyping__device--tablet {
   width: 70%;
-  height: 60%;
   left: 23%;
   top: 19%;
   z-index: 10;
+}
+
+.prototyping__device--tablet:after {
+  display: block;
+  content: "";
+  padding-top: 75%;
 }
 
 .prototyping__button {
@@ -456,7 +475,7 @@ label {
   background-image: linear-gradient(-222deg, #0A4D6F 0%, #032A3E 100%);
   border-radius: 2%;
   width: 100%;
-  height: 100%;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -744,8 +763,39 @@ label {
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 150%;
-  background: #666;
+  height: 100%;
+  display: flex;
+  background: #f2f2f2;
+}
+
+.recent__desktop-buttons,
+.recent__desktop-buttons:before,
+.recent__desktop-buttons:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: red;
+  top: 5px;
+  left: 5px;
+}
+
+.recent__desktop-buttons:before { top: 0; left: 15px }
+.recent__desktop-buttons:after { left: 25px }
+
+.recent__desktop:after {
+  display: block;
+  content: "";
+}
+
+.recent__desktop-screen {
+  background: #333;
+  flex: 1;
+  margin: 40px 0 5px 0px;
+  background-size: cover;
+  box-shadow: inset 0 2px 2px rgba(0,0,0,0.25);
 }
 
 .recent__mobile {
@@ -765,17 +815,19 @@ label {
   background: #333;
   flex: 1;
   margin: 20px 5px 40px 5px;
-}
-
-.recent__item:last-child .recent__mobile {
-  right: -40px;
-  left: auto;
+  background-size: cover;
+  box-shadow: inset 0 2px 2px rgba(0,0,0,0.25);
 }
 
 .recent__mobile:after {
   display: block;
   content: "";
   padding-top: 206.06060606%;
+}
+
+.recent__item:last-child .recent__mobile {
+  right: -40px;
+  left: auto;
 }
 
 .post {
@@ -855,6 +907,10 @@ label {
     display: none;
   }
 
+  .hero__title {
+    font-size: 400%;
+  }
+
   .hero__footer {
     height: 440px;
   }
@@ -900,7 +956,7 @@ label {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding-top: 130px;
+    padding-top: 140px;
   }
 
   .breakout__items {
@@ -926,8 +982,7 @@ label {
     padding-left: 0;
   }
 
-  .recent__item,
-  .recent__desktop {
+  .recent__item {
     padding-top: 72.5%;
   }
 
