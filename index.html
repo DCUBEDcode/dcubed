@@ -10,19 +10,37 @@
 </head>
 <body>
   <section class="hero">
-    <div class="header" id="header">
+    <div class="hero__skew"></div>
+    <div class="hero__wrap">
+      <div class="hero__content">
+        <h1 class="title hero__title">
+          <span>DCUBED</span>
+          <small><strong>/di&#58;/kju&#58;b/d</strong> - to dream, design and develop</small>
+        </h1>
+        <p class="hero__blurb">Dcubed is a collective of creative, clever individuals who are passionate about building beautiful software.</p>
+        <div class="hero__actions">
+          <a href="#" class="btn btn--block">Work with us</a>
+        </div>
+      </div>
+      <div class="hero__logo">
+        <img src="dcubed.png" alt="" class="hero__logo-img">
+      </div>
+    </div>
+  </section>
+  <section class="content" id="content">
+    <div class="header" id="header" hidden>
       <div class="header__container">
         <h1 class="header__logo">
           <i class="header__icon"></i>
         </h1>
         <nav class="header__nav nav">
-          <div class="nav__item" data-scroll-to="portfolio">
+          <div class="nav__item" hidden data-scroll-to="portfolio">
             <img src="design.svg" alt="">
             Portfolio
           </div>
           <div class="nav__item" data-scroll-to="services">
             <img src="app.svg" alt="">
-            Services
+            What we do
           </div>
           <div class="nav__item" data-scroll-to="contact">
             <img src="ux.svg" alt="">
@@ -32,24 +50,6 @@
         </nav>
       </div>
     </div>
-    <div class="hero__wrap">
-      <div class="hero__content">
-        <h1 class="title hero__title">
-          <span>DCUBED</span>
-          <small><strong>/di&#58;/kju&#58;b/d</strong> - to dream, design and develop</small>
-        </h1>
-        <p class="hero__blurb">Dcubed is a collective of creative, clever individuals who are passionate about building beautiful software.</p>
-        <p class="hero__actions">
-          <a href="#" class="btn">Work with us</a>
-          <a href="#" class="btn btn--text">See our work</a>
-        </p>
-      </div>
-      <div class="hero__logo">
-        <img src="dcubed.png" alt="" class="hero__logo-img">
-      </div>
-    </div>
-  </section>
-  <section class="content" id="content">
     <section class="portfolio" id="portfolio">
       <div class="portfolio__hero">
         <div class="portfolio__item portfolio__item--headway">
@@ -80,8 +80,8 @@
         </div>
       </div>
     </section>
-    <div class="container">
-      <h1>What we do</h1>
+    <div class="intro">
+      <h1 class="flat">What we do</h1>
       <ul class="contents unstyled">
         <li>
           <h4 class="contents__header">User Experience</h4>
@@ -118,6 +118,8 @@
           </ul>
         </li>
       </ul>
+    </div>
+    <div class="container">
       <h2>User experience</h2>
       <h3 class="link-to" id="app-design">App design</h3>
       <p>If you have your own development team and just need someone who can help you untangle your thoughts and visually bring them to life, we can also help with this. Fortunately, we speak the same language developers do, so we can make sure that we create achievable designs and work with your team to execute.</p>

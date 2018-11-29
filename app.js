@@ -18,10 +18,10 @@ window.addEventListener('scroll', (e) => {
 
   console.log(window.scrollY, portfolio.offsetTop);
   if(window.scrollY >= portfolioTop && !headerStuck) {
-    header.classList.add('header--stuck')
+    //header.classList.add('header--stuck')
   }
   if(window.scrollY < portfolioTop && headerStuck) {
-    header.classList.remove('header--stuck')
+    //header.classList.remove('header--stuck')
   }
 
   // Active portfolio
