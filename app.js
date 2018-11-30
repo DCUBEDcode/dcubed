@@ -2,7 +2,7 @@ const header = document.getElementById('header');
 const headerTop = header.offsetTop;
 
 const content = document.getElementById('content');
-const contentTop = content.offsetTop - 50;
+const contentTop = content.offsetTop;
 
 const contact = document.getElementById('contact');
 const contactTop = contact.offsetTop - 50;
@@ -16,7 +16,7 @@ const navItems = document.querySelectorAll('.nav__item');
 window.addEventListener('scroll', (e) => {
   const headerStuck = header.classList.contains('header--stuck');
 
-  console.log(window.scrollY, portfolio.offsetTop);
+  console.log(window.scrollY, contentTop);
   if(window.scrollY >= portfolioTop && !headerStuck) {
     //header.classList.add('header--stuck')
   }
@@ -34,11 +34,10 @@ window.addEventListener('scroll', (e) => {
 
   // Active services
   if(window.scrollY >= contentTop) {
-    header.classList.add('header--services')
+    document.body.classList.add('intro-stuck');
   }
-  if(window.scrollY < contentTop && headerStuck) {
-    header.classList.remove('header--services');
-    header.classList.add('header--portfolio');
+  if(window.scrollY < contentTop) {
+    document.body.classList.remove('intro-stuck');
   }
 
   // Active contact
