@@ -10,8 +10,8 @@
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-      "Droid Sans", "Helvetica Neue", sans-serif;
+  "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+  "Droid Sans", "Helvetica Neue", sans-serif;
   line-height: 1.5;
   color: #fff;
   background: #191b25;
@@ -112,6 +112,12 @@ ul ul {
   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
+.what-we-do {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
 .contact-btn {
   transform: translateY(calc(100% + 20px));
 }
@@ -130,7 +136,7 @@ ul ul {
 
 .hero {
   position: relative;
-  height: 80%;
+  height: 90%;
   background-color: #191b25;
   overflow: hidden;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 152 152'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='temple' fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M152 150v2H0v-2h28v-8H8v-20H0v-2h8V80h42v20h20v42H30v8h90v-8H80v-42h20V80h42v40h8V30h-8v40h-42V50H80V8h40V0h2v8h20v20h8V0h2v150zm-2 0v-28h-8v20h-20v8h28zM82 30v18h18V30H82zm20 18h20v20h18V30h-20V10H82v18h20v20zm0 2v18h18V50h-18zm20-22h18V10h-18v18zm-54 92v-18H50v18h18zm-20-18H28V82H10v38h20v20h38v-18H48v-20zm0-2V82H30v18h18zm-20 22H10v18h18v-18zm54 0v18h38v-20h20V82h-18v20h-20v20H82zm18-20H82v18h18v-18zm2-2h18V82h-18v18zm20 40v-18h18v18h-18zM30 0h-2v8H8v20H0v2h8v40h42V50h20V8H30V0zm20 48h18V30H50v18zm18-20H48v20H28v20H10V30h20V10h38v18zM30 50h18v18H30V50zm-2-40H10v18h18V10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -184,7 +190,7 @@ ul ul {
 }
 
 .hero__logo-img {
-  max-height: 140px;
+  max-height: 180px;
 }
 
 .hero__content p {
@@ -278,14 +284,8 @@ ul ul {
 
 .intro {
   width: 100%;
-  padding: 20px;
-  padding-bottom: 30px;
   margin-bottom: 30px;
-  background: #fff;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-  border-radius: 5px;
   overflow: hidden;
-  margin-top: -40px;
 }
 
 .contents > li {
@@ -325,7 +325,9 @@ ul ul {
   font-size: 12px;
 }
 
-.contents__link i { color: #999; }
+.contents__link i {
+  color: #2196F3;
+}
 
 .contents li:nth-child(1n) span { color: #00B32C; }
 .contents li:nth-child(2n) span { color: #B3000C; }
@@ -422,22 +424,22 @@ ul ul {
 
 .portfolio {
   position: relative;
-  height: 100%;
+  z-index: 20;
   display: flex;
   flex-direction: column;
-  background: #13141c;
-  display: none;
+  background: #13161f;
 }
 
 .portfolio__project {
   margin-bottom: 0;
+  color: #fff;
+  font-weight: 900;
+  font-size: 18px;
 }
 
 .portfolio__hero,
 .portfolio__grid {
   padding: 5px;
-  opacity: 0;
-  transition: opacity 1s ease;
 }
 
 .portfolio__hero {
@@ -476,11 +478,12 @@ ul ul {
   align-items: flex-end;
   overflow: hidden;
   height: 100%;
-  width: 220px;
+  width: calc(100% - 18px);
   display: inline-block;
   white-space: normal;
   vertical-align: top;
   position: relative;
+  padding-bottom: 62.5%;
 }
 
 @media(min-width: 768px) {
@@ -494,7 +497,6 @@ ul ul {
 }
 
 .portfolio__item--headway {
-  width: 100%;
   background: linear-gradient(#4CAF50,#009688)
 }
 
@@ -629,8 +631,8 @@ ul ul {
   }
 
   .hero__content {
-    max-width: 540px;
-    padding-left: 60px;
+    max-width: 600px;
+    padding-left: 100px;
   }
 
   .hero__logo {
@@ -649,7 +651,7 @@ ul ul {
   }
 
   .hero__blurb {
-    font-size: 20px;
+    font-size: 28px;
   }
 
   .header__nav {
@@ -659,12 +661,7 @@ ul ul {
   .intro {
     position: absolute;
     max-width: 300px;
-    top: 40px;
     margin-top: 0;
-  }
-
-  .content {
-    margin-top: -60px;
   }
 
   .content__container {
@@ -674,6 +671,43 @@ ul ul {
 
   .intro-stuck .intro {
     position: fixed;
+  }
+
+  .portfolio {
+    background: #f9f9f9;
+    padding-bottom: 20px;
+    margin-top: -50px;
+  }
+
+  .portfolio__grid {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: initial;
+    white-space: normal;
+    padding: 0;
+  }
+
+  .portfolio__item {
+    width: 33%;
+    height: 100%;
+    padding-bottom: 50%;
+    cursor: pointer;
+    transition: all 200ms ease;
+    z-index: 5;
+    margin-left: 10px;
+  }
+
+  .portfolio__item:first-child {
+    margin-left: 0;
+  }
+
+  .portfolio__item:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    z-index: 10;
   }
 
 }
