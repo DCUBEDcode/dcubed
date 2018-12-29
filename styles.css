@@ -523,7 +523,8 @@ ul ul {
   margin-top: 40px;
 }
 
-.contact h1 {
+.contact h1,
+.contact h3 {
   color: #fff;
 }
 
@@ -685,7 +686,7 @@ ul ul {
   .how-we-work {
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 
   .how-we-work > div {
@@ -697,18 +698,8 @@ ul ul {
     width: 280px;
   }
 
-  .how-we-work--communicate {
-    flex-direction: row-reverse;
-    margin-left: -40px;
-  }
-
-  .how-we-work--communicate > div {
-    padding-right: 0;
-    padding-left: 80px;
-  }
-
   .how-we-work--communicate img {
-    width: 400px;
+    width: 350px;
   }
 
   .how-we-work--grow {
