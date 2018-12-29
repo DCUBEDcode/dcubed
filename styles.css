@@ -711,5 +711,14 @@ ul ul {
     width: 400px;
   }
 
+  .how-we-work--grow {
+    flex-direction: row-reverse;
+  }
+
+  .how-we-work--grow > div {
+    padding-right: 0;
+    padding-left: 80px;
+  }
+
 
 }
