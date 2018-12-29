@@ -26,7 +26,8 @@ h4 {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-weight: 700;
   color: #152c4d;
 }
@@ -40,7 +41,7 @@ h2 {
 }
 
 p {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 img {
@@ -55,10 +56,18 @@ ul ul {
   margin-left: 20px;
 }
 
+.text-centered {
+  text-align: center;
+}
+
 .heading {
   padding-bottom: 10px;
   margin-bottom: 20px;
   border-bottom: 1px solid #ddd;
+}
+
+.heading--spaced {
+  margin-bottom: 40px;
 }
 
 .unstyled {
@@ -251,7 +260,10 @@ ul ul {
   margin: 0 auto;
   position: relative;
   padding: 20px;
-  padding-top: 70px; 
+}
+
+.header + .content {
+  padding-top: 70px;
 }
 
 .contents {
@@ -547,21 +559,6 @@ ul ul {
   margin-right: 10px;
 }
 
-.how-we-work {
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-.how-we-work > div {
-  flex: 1;
-  padding-right: 80px;
-}
-
-.how-we-work img {
-  width: 320px;
-}
-
 @media(max-width: 1024px) {
   .header--hide {
     transform: translateY(-100%);
@@ -605,6 +602,11 @@ ul ul {
     width: 100%;
   }
 
+  .content {
+    padding-top: 100px; 
+    padding-bottom: 80px;
+  }
+
   .content__container {
     position: relative;
   }
@@ -643,7 +645,9 @@ ul ul {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 10px;
     overflow: visible;
-    /* Hang off hero */
+  }
+
+  .portfolio__grid--pulldown {
     margin-bottom: -40px;
   }
 
@@ -676,6 +680,35 @@ ul ul {
   .work__facts {
     padding-left: 20px;
     border-left: 1px solid #ddd;
+  }
+
+  .how-we-work {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .how-we-work > div {
+    flex: 1;
+    padding-right: 80px;
+  }
+
+  .how-we-work img {
+    width: 280px;
+  }
+
+  .how-we-work--communicate {
+    flex-direction: row-reverse;
+    margin-left: -40px;
+  }
+
+  .how-we-work--communicate > div {
+    padding-right: 0;
+    padding-left: 80px;
+  }
+
+  .how-we-work--communicate img {
+    width: 400px;
   }
 
 
