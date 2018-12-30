@@ -132,7 +132,7 @@ ul ul {
 
 .container {
   width: 100%;
-  max-width: 960px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -255,7 +255,7 @@ ul ul {
   background: #fff;
   color: #555;
   width: 100%;
-  max-width: 960px;
+  max-width: 1100px;
   min-height: 400px;
   margin: 0 auto;
   position: relative;
@@ -454,7 +454,6 @@ ul ul {
 }
 
 .portfolio__item {
-  background: linear-gradient(#132c42,#1f2735);
   color: #fff;
   border-radius: 5px;
   display: flex;
@@ -467,6 +466,9 @@ ul ul {
   vertical-align: top;
   position: relative;
   box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center -1px;
 }
 
 @media(min-width: 768px) {
@@ -475,16 +477,41 @@ ul ul {
   }
 }
 
+.portfolio__item:after {
+  position: absolute;
+  background-color: #191b25;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.25;
+  transition: opacity 200ms ease;
+}
+
+.portfolio__item--ldu {
+  background-image: url(../ldu.png);
+}
+
 .portfolio__item--ldu .portfolio__banner {
   background: linear-gradient(#f48e36,#F44336);
+}
+
+.portfolio__item--headway {
+  background-image: url(../headway.png);
 }
 
 .portfolio__item--headway .portfolio__banner {
   background: linear-gradient(#4CAF50,#009688)
 }
 
+.portfolio__item--hotline {
+  background-image: url(../hotline.png);
+}
+
 .portfolio__item--hotline .portfolio__banner {
-  background: linear-gradient(#673AB7,#1f2735)
+  background: linear-gradient(#673AB7,#492090)
 }
 
 .portfolio__item--docsols .portfolio__banner {
@@ -499,6 +526,7 @@ ul ul {
   left: 0;
   width: 100%;
   background: rgba(0,0,0,0.15);
+  z-index: 50;
 }
 
 .portfolio__type {
@@ -575,6 +603,10 @@ ul ul {
   body {
     padding-top: 50px;
     font-size: 18px;
+  }
+
+  .header {
+    padding: 0 20px;
   }
 
   .hero {
@@ -662,8 +694,11 @@ ul ul {
   }
 
   .portfolio__item:hover {
-    transform: scale(1.0125);
     box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+  }
+
+  .portfolio__item:hover:after {
+    opacity: 0;
   }
 
   .work__header {
@@ -686,7 +721,9 @@ ul ul {
   .how-we-work {
     display: flex;
     align-items: center;
-    margin-bottom: 60px;
+    padding: 60px 80px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   }
 
   .how-we-work > div {
