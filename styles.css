@@ -422,6 +422,7 @@ ul ul {
 
 .portfolio__project {
   margin-bottom: 0;
+  font-weight: 700;
 }
 
 .portfolio__hero {
@@ -465,10 +466,10 @@ ul ul {
   white-space: normal;
   vertical-align: top;
   position: relative;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
-  background-size: contain;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -1px;
+  background-position: center -37px;
 }
 
 @media(min-width: 768px) {
@@ -494,28 +495,24 @@ ul ul {
   background-image: url(../ldu.png);
 }
 
-.portfolio__item--ldu .portfolio__banner {
-  background: linear-gradient(#f48e36,#F44336);
-}
-
 .portfolio__item--headway {
   background-image: url(../headway.png);
-}
-
-.portfolio__item--headway .portfolio__banner {
-  background: linear-gradient(#4CAF50,#009688)
 }
 
 .portfolio__item--hotline {
   background-image: url(../hotline.png);
 }
 
-.portfolio__item--hotline .portfolio__banner {
-  background: linear-gradient(#673AB7,#492090)
+.portfolio__item--headway .portfolio__project {
+  color: green;
 }
 
-.portfolio__item--docsols .portfolio__banner {
-  background: linear-gradient(#116ac5,#3F51B5);
+.portfolio__item--ldu .portfolio__project {
+  color: #ff6000;
+}
+
+.portfolio__item--hotline .portfolio__project {
+  color: #1f60a9;
 }
 
 .portfolio__banner {
@@ -525,16 +522,13 @@ ul ul {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(0,0,0,0.15);
+  background: #fff;
+  color: #152c4d;
   z-index: 50;
 }
 
 .portfolio__type {
-  font-size: 13px;
-}
-
-.portfolio__banner--headway {
-  background: #39aa59;
+  font-size: 16px;
 }
 
 .contact {
@@ -694,7 +688,7 @@ ul ul {
   }
 
   .portfolio__item:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   }
 
   .portfolio__item:hover:after {
@@ -722,8 +716,6 @@ ul ul {
     display: flex;
     align-items: center;
     padding: 60px 80px;
-    margin-bottom: 40px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   }
 
   .how-we-work > div {
