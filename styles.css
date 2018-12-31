@@ -32,6 +32,10 @@ h3 {
   color: #152c4d;
 }
 
+.huge {
+  font-size: 3.5rem;
+}
+
 h1 {
   font-size: 3rem;
 }
@@ -121,6 +125,28 @@ ul ul {
   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
+.btn--link {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: 0;
+  box-shadow: none;
+  color: #0080e6;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  font-size: 1em;
+  margin-left: -30px;
+  text-transform: none;
+}
+
+.btn--link:hover {
+  box-shadow: none;
+  color: #044a82;
+}
+
+.btn--link i {
+  margin-left: 5px;
+}
+
 .contact-btn {
   transform: translateY(calc(100% + 20px));
 }
@@ -171,7 +197,6 @@ ul ul {
 }
 
 .hero__content {
-  max-width: 420px;
   text-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 
@@ -613,7 +638,6 @@ ul ul {
 
   .hero__content {
     font-size: 20px;
-    max-width: 570px;
     text-align: center;
   }
 
@@ -715,7 +739,7 @@ ul ul {
   .how-we-work {
     display: flex;
     align-items: center;
-    padding: 60px 80px;
+    padding: 40px 80px;
   }
 
   .how-we-work > div {
