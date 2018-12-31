@@ -33,15 +33,15 @@ h3 {
 }
 
 .huge {
-  font-size: 3.5rem;
+  font-size: 2rem;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 1.75rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 p {
@@ -198,6 +198,7 @@ ul ul {
 
 .hero__content {
   text-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
 .hero__blurb {
@@ -624,6 +625,18 @@ ul ul {
     font-size: 18px;
   }
 
+  .huge {
+    font-size: 3.5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
   .header {
     padding: 0 20px;
   }
@@ -638,7 +651,6 @@ ul ul {
 
   .hero__content {
     font-size: 20px;
-    text-align: center;
   }
 
   .hero__logo {
