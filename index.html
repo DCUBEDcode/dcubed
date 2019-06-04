@@ -11,7 +11,30 @@
     <title>DCUBED - Dream, Design, Develop - Brisbane Web Development</title>
   </head>
   <body>
-    <div class="header header--hide" id="header">
+    <div class="mobile-nav" id="mobile-nav">
+      <div class="mobile-nav__logo" id="mobile-nav-logo">
+        <i class="material-icons">close</i>
+      </div>
+      <nav class="mobile-nav__menu">
+        <a href="/" class="mobile-nav__item" data-scroll-to="portfolio">
+          <img src="track.svg" alt="">
+          Home
+        </a>
+        <a href="#portfolio" class="mobile-nav__item" data-scroll-to="portfolio">
+          <img src="design.svg" alt="">
+          Our work
+        </a>
+        <a href="/what-we-do" class="mobile-nav__item" data-scroll-to="services">
+          <img src="app.svg" alt="">
+          What we do
+        </a>
+        <a href="#contact" class="mobile-nav__item" data-scroll-to="portfolio">
+          <img src="ux.svg" alt="">
+          Work with us
+        </a>
+      </nav>
+    </div>
+    <div class="header header--hide hidden-mobile" id="header">
       <div class="header__container">
         <a href="/" class="header__logo">
           <i class="header__icon"></i>
@@ -26,7 +49,7 @@
             <img src="app.svg" alt="">
             What we do
           </a>
-          <a href="/work-with-us" class="nav__item" data-scroll-to="portfolio">
+          <a href="/contact" class="nav__item" data-scroll-to="portfolio">
             <img src="ux.svg" alt="">
             Work with us
           </a>
@@ -37,12 +60,12 @@
       <div class="hero__wrap">
         <div class="hero__content">
           <h1 class="title hero__title huge">
-            <span>Need help bringing your idea to life?</span>
+            <span>We make magical software</span>
           </h1>
-          <p class="hero__blurb">We are a collective of creative and clever individuals, <br class="desktop-break"> passionate about beautiful software.</p>
+          <p class="hero__blurb"><strong class="hero__brand">DCUBED</strong> is a collective of creative and clever individuals, <br class="desktop-break"> passionate about beautiful software.</p>
           <p class="hero__actions">
-          <a href="#" class="btn">Work with us</a>
-          <a href="/our-work" class="btn btn--text">See our work</a>
+          <a href="#contact" class="btn">Work with us</a>
+          <a href="#our-work" class="btn btn--text">See our work</a>
           </p>
         </div>
         <div class="hero__logo">
@@ -78,60 +101,112 @@
         </li>
       </ul>
     </div>
-    <section class="portfolio" id="portfolio">
-      <div class="portfolio__grid">
-        <a href="our-work/headway" class="portfolio__item portfolio__item--headway">
-          <div class="portfolio__banner">
-            <h4 class="portfolio__project">Headway</h4>
-            <p class="flat portfolio__type">Learning Management System</p>
-          </div>
-        </a>
-        <a href="our-work/logging-down-under" class="portfolio__item portfolio__item--ldu">
-          <div class="portfolio__banner">
-            <h4 class="portfolio__project">Logging Down Under</h4>
-            <p class="flat portfolio__type">File transfer app</p>
-          </div>
-        </a>
-        <a href="our-work/css-hotline" class="portfolio__item portfolio__item--hotline">
-          <div class="portfolio__banner">
-            <h4 class="portfolio__project">CSS Hotline</h4>
-            <p class="flat portfolio__type">Instant programming support</p>
-          </div>
-        </a>
-      </div>
-    </section>
-    <section class="content">
-      <h1 class="heading text-centered">What it's like working us</h1>
+    <section class="content" id="what-we-do">
+      <h1 class="heading text-centered">How we work</h1>
       <div class="how-we-work">
+        <div class="how-we-work__img" id="proto-image">
+          <img src="user.svg" alt="">
+        </div>
         <div>
-          <h2>Rapid prototyping</h2>
+          <h2>We use rapid prototyping</h2>
           <p>What you won’t find us doing is spending weeks perfecting high quality design mocks. Making such serious investment and commitment to a design so early on is a flawed way to work.</p>
           <p>Instead, expect from us enough visual documentation to help convey an idea. Once we all feel like it’s the right choice. We start bringing the idea to life with code.</p>
+          <a href="/what-we-do" class="btn btn--link">
+            Read more
+            <i class="material-icons">chevron_right</i>
+            <i class="material-icons" style="margin-left: -17px">chevron_right</i>
+          </a>
         </div>
-        <img src="user.svg" alt="">
       </div>
       <div class="how-we-work how-we-work--grow">
+        <div class="how-we-work__img" id="heroku-image">
+          <img src="heroku.svg" alt="" style="width: 170px">
+        </div>
         <div>
           <h2>We ship fast, and ship often.</h2>
           <p>Using platforms like Heroku, we are able to create and host any kind of app in seconds.</p><p>Not only does this automated deployment process save time (money), it means you get a publically accessible link to your application upon kick off. You can now test and share with your own team, whenever we push a release.</p>
+          <a href="/what-we-do" class="btn btn--link">
+            Read more
+            <i class="material-icons">chevron_right</i>
+            <i class="material-icons" style="margin-left: -17px">chevron_right</i>
+          </a>
         </div>
-        <img src="heroku.svg" alt="" style="width: 170px">
       </div>
       <div class="how-we-work how-we-work--communicate">
+        <div class="how-we-work__img" id="trello-image">
+          <img src="tools.png" alt="">
+        </div>
         <div>
           <h2>Get amongst it (or don't)</h2>
           <p>We create an environment of transparency and sharing so that you can see as much or as little as you want about the progress of your application.</p>
           <p>Upon kick-off you will receive an invite to your projects channel in the communication app Slack. In here you will see all ‘commits’ made to the code repository, the moderation of the Trello project board and any commentary made by the development team.</p>
+          <a href="/what-we-do" class="btn btn--link">
+            Read more
+            <i class="material-icons">chevron_right</i>
+            <i class="material-icons" style="margin-left: -17px">chevron_right</i>
+          </a>
         </div>
-        <img src="tools.png" alt="">
       </div>
-      <div class="how-we-work how-we-work--grow">
+      <div class="how-we-work how-we-work--grow" id="insight-image">
+        <div class="how-we-work__img">
+          <img src="lab.svg" alt="" style="width: 240px">
+        </div>
         <div>
-          <h2>Test and learn for the future</h2>
+          <h2>Give insight for future opportunity</h2>
           <p>During project kick offs, we help determine the goals of your product. It's very important that once users start using your software, you are able to understand exactly how they are using it.</p>
           <p>With our measurements in place, the learnings can shape any future decisions you make. You will continue to get engagement reports as long as you choose. </p>
+          <a href="/what-we-do" class="btn btn--link">
+            Read more
+            <i class="material-icons">chevron_right</i>
+            <i class="material-icons" style="margin-left: -17px">chevron_right</i>
+          </a>
         </div>
-        <img src="lab.svg" alt="" style="width: 240px">
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h1>Our work</h1>
+        <p class="lead">Amet saepe eaque minima cupiditate optio corporis? Eveniet voluptate
+        cupiditate vitae impedit ab molestias repellendus ex.</p>
+        <div class="portfolio__grid">
+          <a href="our-work/headway" class="portfolio__item portfolio__item--headway">
+            <div class="portfolio__banner">
+              <h4 class="portfolio__project">Headway</h4>
+              <p class="flat portfolio__type">Learning Management System</p>
+            </div>
+          </a>
+          <a href="our-work/logging-down-under" class="portfolio__item portfolio__item--ldu">
+            <div class="portfolio__banner">
+              <h4 class="portfolio__project">Logging Down Under</h4>
+              <p class="flat portfolio__type">File transfer app</p>
+            </div>
+          </a>
+          <a href="our-work/css-hotline" class="portfolio__item portfolio__item--hotline">
+            <div class="portfolio__banner">
+              <h4 class="portfolio__project">CSS Hotline</h4>
+              <p class="flat portfolio__type">Instant programming support</p>
+            </div>
+          </a>
+          <a href="our-work/headway" class="portfolio__item portfolio__item--headway">
+            <div class="portfolio__banner">
+              <h4 class="portfolio__project">Headway</h4>
+              <p class="flat portfolio__type">Learning Management System</p>
+            </div>
+          </a>
+          <a href="our-work/logging-down-under" class="portfolio__item portfolio__item--ldu">
+            <div class="portfolio__banner">
+              <h4 class="portfolio__project">Logging Down Under</h4>
+              <p class="flat portfolio__type">File transfer app</p>
+            </div>
+          </a>
+          <a href="our-work/css-hotline" class="portfolio__item portfolio__item--hotline">
+            <div class="portfolio__banner">
+              <h4 class="portfolio__project">CSS Hotline</h4>
+              <p class="flat portfolio__type">Instant programming support</p>
+            </div>
+          </a>
+        </div>
+        <a href="#" class="btn btn--block btn--noshadow">See more</a>
       </div>
     </section>
     <div class="highlight">Accepting new projects for Q1-2 2019</div>

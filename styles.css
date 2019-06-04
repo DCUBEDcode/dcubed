@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 [hidden] {
   display: none !important;
 }
@@ -52,6 +57,11 @@ p {
   margin-bottom: 20px;
 }
 
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
 img {
   max-width: 100%;
 }
@@ -69,8 +79,9 @@ ul ul {
 }
 
 .heading {
+  font-size: 2.5rem;
   padding-bottom: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   border-bottom: 1px solid #ddd;
 }
 
@@ -94,7 +105,7 @@ ul ul {
   text-decoration: none;
   text-align: center;
   padding: 12px 30px;
-  border-radius: 2px;
+  border-radius: 4px;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 500;
@@ -102,6 +113,10 @@ ul ul {
   transition: all 200ms ease;
   box-shadow: 0 2px 5px rgba(0,0,0,0.25);
   text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+}
+
+.btn--noshadow {
+  box-shadow: none;
 }
 
 .btn:hover {
@@ -135,11 +150,11 @@ ul ul {
   background: none;
   border: 0;
   box-shadow: none;
-  color: #0080e6;
-  text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  color: #28a0ff;
+  text-shadow: none;
   font-size: 1em;
   margin-left: -30px;
-  text-transform: none;
+  font-weight: 600;
 }
 
 .btn--link:hover {
@@ -198,6 +213,10 @@ ul ul {
   z-index: 5;
   content: "";
   background: linear-gradient(#09427d9e,#191b25);
+}
+
+.hero__brand {
+  font-weight: 500;
 }
 
 .hero__content {
@@ -259,13 +278,11 @@ ul ul {
 
 .nav__item {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex: 1;
   transition: all 200ms ease;
   cursor: pointer;
   color: #fff;
-  padding: 8px 15px;
+  padding: 20px;
   border-radius: 5px;
   font-size: 13px;
   font-weight: 700;
@@ -286,7 +303,7 @@ ul ul {
   background: #fff;
   color: #555;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1500px;
   min-height: 400px;
   margin: 0 auto;
   position: relative;
@@ -324,8 +341,25 @@ ul ul {
   margin-right: 20px;
 }
 
-.how-we-work img {
-  display: none;
+.how-we-work {
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+
+.how-we-work__img {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.how-we-work__img img {
+  opacity: 0;
+  transform: translateX(25%);
+  transition: all 375ms ease;
+}
+
+.how-we-work__img--show img {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .contents {
@@ -377,6 +411,94 @@ ul ul {
 
 .contents li:nth-child(1n) span { color: #00B32C; }
 .contents li:nth-child(2n) span { color: #B3000C; }
+
+.mobile-nav {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 500;
+  transform: translateY(calc(-100% - 20px));
+  transition: all 200ms ease;
+}
+
+.mobile-nav--show {
+  transform: translateY(0);
+}
+
+.mobile-nav__item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  transition: all 200ms ease;
+  cursor: pointer;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.mobile-nav__item:first-child {
+  border-top: 0;
+}
+
+.mobile-nav__item:hover {
+  background: rgba(0,0,0,0.1);
+}
+
+.mobile-nav__item img {
+  width: 18px;
+  margin-right: 12px;
+}
+
+.mobile-nav__menu {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 100vw;
+  background: #122948;
+  transform: translateY(-100%);
+  transition: all 375ms ease;
+}
+
+.mobile-nav__logo {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #122948;
+  background-image: url('dcubed.png');
+  background-size: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0,0,0,.25);
+  position: relative;
+  z-index: 50;
+  transition: background 375ms ease;
+}
+
+.mobile-nav__logo i {
+  opacity: 0;
+  color: #122948;
+  transition: opacity 375ms ease;
+}
+
+.mobile-nav--open .mobile-nav__menu {
+  transform: translateY(0);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+.mobile-nav--open .mobile-nav__logo {
+  background: #fff;
+  background-position: bottom;
+}
+
+.mobile-nav--open .mobile-nav__logo i { opacity: 1 }
 
 .header {
   display: flex;
@@ -436,6 +558,8 @@ ul ul {
   text-decoration: none;
 }
 
+.header__logo span { display: none }
+
 .header__icon {
   width: 50px;
   height: 50px;
@@ -478,8 +602,8 @@ ul ul {
 
 .portfolio {
   position: relative;
-  padding: 20px;
-  padding-bottom: 0;
+  padding: 40px 0;
+  background: #f2f2f2;
 }
 
 .portfolio__project {
@@ -505,7 +629,7 @@ ul ul {
   -webkit-overflow-scrolling: touch;
   padding: 0 20px 30px 20px;
   margin: 0 -20px;
-  margin-top: -40px;
+  margin-bottom: 30px;
 }
 
 .portfolio__title {
@@ -574,6 +698,7 @@ ul ul {
   color: #fff;
   overflow: hidden;
   font-weight: 300;
+  height: 100vh;
 }
 
 .contact__footer {
@@ -620,10 +745,6 @@ ul ul {
 }
 
 @media(max-width: 1024px) {
-  .header--hide {
-    transform: translateY(-100%);
-  }
-
   .desktop-break {
     display: none;
   }
@@ -631,13 +752,17 @@ ul ul {
 
 @media(min-width: 1024px) {
 
+  .hidden-mobile {
+    display: initial;
+  }
+
   body {
     padding-top: 50px;
     font-size: 18px;
   }
 
   .huge {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 
   h1 {
@@ -696,25 +821,24 @@ ul ul {
     max-width: 420px;
   }
 
+  .portfolio {
+    padding: 80px 0;
+  }
+
   .portfolio-wrap {
     padding: 0;
     position: relative;
     z-index: 10;
   }
 
-  .portfolio {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 40px 20px;
-  }
-
   .portfolio__grid {
     display: grid;
-    padding: 0 20px;
-    margin: 0 -20px;
+    margin: 0 auto;
+    max-width: 1100px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 10px;
     overflow: visible;
+    padding: 0;
   }
 
   .portfolio__item {
@@ -769,18 +893,18 @@ ul ul {
     padding: 40px 80px;
   }
 
-  .how-we-work > div {
-    flex: 1;
+  .how-we-work > div:first-child {
+    width: 40%;
     padding-right: 80px;
+  }
+
+  .how-we-work > div:last-child {
+    width: 60%;
   }
 
   .how-we-work img {
     width: 280px;
     display: initial;
-  }
-
-  .how-we-work--communicate img {
-    width: 350px;
   }
 
   .how-we-work--grow {
@@ -807,4 +931,10 @@ ul ul {
     margin-right: 20px;
   }
 
+}
+
+/* Utility */
+
+.hidden-mobile {
+  display: none;
 }
