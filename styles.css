@@ -421,7 +421,7 @@ ul ul {
   transition: all 200ms ease;
 }
 
-.mobile-nav--show {
+.mobile-nav--show .mobile-nav {
   transform: translateY(0);
 }
 
@@ -757,7 +757,6 @@ ul ul {
   }
 
   body {
-    padding-top: 50px;
     font-size: 18px;
   }
 
@@ -771,6 +770,20 @@ ul ul {
 
   h2 {
     font-size: 2rem;
+  }
+
+  .mobile-nav__menu {
+    width: 200px;
+    position: absolute;
+    left: calc(100% + 20px);
+    top: 0;
+    right: auto;
+    transform: none;
+    height: 100vh;
+  }
+
+  .mobile-nav--open {
+    transform: translateX(-200px);
   }
 
   .header {

@@ -34,5 +34,5 @@ window.addEventListener('scroll', scrollHandler);
 
 mobileNavLogo.addEventListener('click', (event) => {
   event.preventDefault();
-  mobileNav.classList.toggle('mobile-nav--open');
+  document.body.classList.toggle('mobile-nav--open');
 })
