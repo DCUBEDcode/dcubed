@@ -761,7 +761,7 @@ ul ul {
   }
 
   .huge {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   h1 {
@@ -801,7 +801,7 @@ ul ul {
   .hero__logo {
     flex: none;
     display: block;
-    width: 25vh;
+    width: 15vh;
   }
 
   .hero__logo-img {
